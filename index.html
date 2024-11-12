@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gotit {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analyze Top Competitors</h1>
+    <!-- <label for="asins">Top asins (seperated by ,):</label>
+        <input type="text" id="asins" name="asins">-->
+    <label for="spreadsheeturl">Spreadsheet URL:</label><br>
+    <input type="url" id="spreadsheeturl" name="spreadsheeturl">
+    <div style="height: 15px"></div>
+    <button type="button" id="button">Start</button>
+    <div style="height: 10px"></div>
+    <p id="status-message-visibility" style="display:none"><span id="status-message"></span><span id="gotit"
+            onclick="gotItClicked()">&nbsp;Got it.</span></p>
+    <script>
+        function gotItClicked() {
+            document.getElementById("status-message-visibility").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

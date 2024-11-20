@@ -14,21 +14,27 @@
 </head>
 
 <body>
-    <h1>Analyze Top Competitors</h1>
-    <!-- <label for="asins">Top asins (seperated by ,):</label>
-        <input type="text" id="asins" name="asins">-->
-    <label for="spreadsheeturl">Spreadsheet URL:</label><br>
-    <input type="url" id="spreadsheeturl" name="spreadsheeturl">
-    <div style="height: 15px"></div>
-    <button type="button" id="button">Start</button>
+    <h2>Add Shares for top Competitors</h1>
+    <button type="button" id="start-asinsight">Start</button>
     <div style="height: 10px"></div>
-    <p id="status-message-visibility" style="display:none"><span id="status-message"></span><span id="gotit"
-            onclick="gotItClicked()">&nbsp;Got it.</span></p>
+    <p id="status-message-visibility-asinsight" style="display:none"><span id="status-message-asinsight"></span>
+        <span onclick="gotItClicked()">&nbsp;Got it.</span></p>
     <script>
-        function gotItClicked() {
-            document.getElementById("status-message-visibility").style.display = "none";
+        function gotItClickedAsinsight() {
+            document.getElementById("status-message-visibility-asinsight").style.display = "none";
         }
     </script>
+    <h2>Sellersprite Monthly PPC Costs</h2>
+    <button type="button" id="start-sellersprite">Start</button>
+    <div style="height: 10px"></div>
+    <p id="status-message-visibility-sellersprite" style="display:none"><span id="status-message-sellersprite"></span>
+        <span onclick="gotItClickedSellersprite()">&nbsp;Got it.</span></p>
+    <script>
+        function gotItClickedSellersprite() {
+            document.getElementById("status-message-visibility-sellersprite").style.display = "none";
+        }
+    </script>
+
 </body>
 
 </html>

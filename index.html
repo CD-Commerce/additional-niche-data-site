@@ -14,6 +14,20 @@
 </head>
 
 <body>
+    <script>
+        let is_germany = true;
+        function onCheckboxClicked() {
+            if (is_germany) {
+                document.getElementById('country-selector-label').innerText = 'US'
+            }
+            else {
+                document.getElementById('country-selector-label').innerText = 'DE'
+            }
+            is_germany = !is_germany
+        }
+    </script>
+    <label for="country-selector" id="country-selector-label">DE</label>
+    <input type="checkbox" id="country-selector" onclick="onCheckboxClicked()">
     <h2>Add Shares for top Competitors</h1>
     <button type="button" id="start-asinsight">Start</button>
     <div style="height: 10px"></div>

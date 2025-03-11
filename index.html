@@ -14,45 +14,53 @@
 </head>
 
 <body>
-    <script>
-        let is_germany = true;
-        function onCheckboxClicked() {
-            if (is_germany) {
-                document.getElementById('country-selector-label').innerText = 'US'
-            }
-            else {
-                document.getElementById('country-selector-label').innerText = 'DE'
-            }
-            is_germany = !is_germany
-        }
-    </script>
-    <label for="country-selector" id="country-selector-label">DE</label>
-    <input type="checkbox" id="country-selector" onclick="onCheckboxClicked()">
-    <h2>Add Shares for top Competitors</h1>
-    <button type="button" id="start-asinsight">Start</button>
-    <div style="height: 10px"></div>
-    <p id="status-message-visibility-asinsight" style="display:none"><span id="status-message-asinsight"></span>
-        <span onclick="gotItClickedAsinsight()" class="gotit">&nbsp;Got it.</span></p>
-    <script>
-        function gotItClickedAsinsight() {
-            document.getElementById("status-message-visibility-asinsight").style.display = "none";
-        }
-    </script>
-    <div style="height:15px"></div>
-    <h2>Sellersprite Monthly PPC Costs</h2>
-    <label for="keywords">Keywords:</label><br>
-    <textarea id="keywords" rows="10" cols="40"></textarea>
-    <div style="height:15px"></div>
-    <button type="button" id="start-sellersprite">Start</button>
-    <div style="height: 10px"></div>
-    <p id="status-message-visibility-sellersprite" style="display:none"><span id="status-message-sellersprite"></span>
-        <span onclick="gotItClickedSellersprite()" class="gotit">&nbsp;Got it.</span></p>
-    <script>
-        function gotItClickedSellersprite() {
-            document.getElementById("status-message-visibility-sellersprite").style.display = "none";
-        }
-    </script>
+    <label for="country-selector">Choose a country:</label>
+    <select id="country-selector" aria-label="Select one of ten values">
+        <!-- Placeholder option (optional) -->
+        <option disabled>Select one…</option>
 
+        <!-- 10 values: One has "selected" -->
+        <option value="de" selected>Germany</option>
+        <option value="com">USA</option>
+        <option value="uk">UK (Great Britain)</option>
+        <option value="fr">France</option>
+        <option value="it">Italy</option>
+        <option value="es">Spain</option>
+        <option value="jp">Japan</option>
+        <option value="se">Sweden</option>
+        <option value="pl">Poland</option>
+        <option value="be">Belgium</option>
+        <option value="nl">Netherlands</option>
+        <option value="ie">Ireland</option>
+    </select>
+
+    <h2>Add Shares for top Competitors</h1>
+        <button type="button" id="start-asinsight">Start</button>
+        <div style="height: 10px"></div>
+        <p id="status-message-visibility-asinsight" style="display:none"><span id="status-message-asinsight"></span>
+            <span onclick="gotItClickedAsinsight()" class="gotit">&nbsp;Got it.</span>
+        </p>
+        <script>
+            function gotItClickedAsinsight() {
+                document.getElementById("status-message-visibility-asinsight").style.display = "none";
+            }
+        </script>
+        <div style="height:15px"></div>
+        <h2>Sellersprite Monthly PPC Costs</h2>
+        <label for="keywords">Keywords:</label><br>
+        <textarea id="keywords" rows="10" cols="40"></textarea>
+        <div style="height:15px"></div>
+        <button type="button" id="start-sellersprite">Start</button>
+        <div style="height: 10px"></div>
+        <p id="status-message-visibility-sellersprite" style="display:none"><span
+                id="status-message-sellersprite"></span>
+            <span onclick="gotItClickedSellersprite()" class="gotit">&nbsp;Got it.</span>
+        </p>
+        <script>
+            function gotItClickedSellersprite() {
+                document.getElementById("status-message-visibility-sellersprite").style.display = "none";
+            }
+        </script>
 </body>
 
 </html>
